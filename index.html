@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Saludar() {
+        let nombre = prompt("¿Cómo es tu nombre?");
+        let edad = prompt("¿Cuál  es tu edad?");
+        let saludando = document.createElement("h1");
+        document.body.append(saludando);
+        saludando.innerHTML =
+          "1) Tu nombre es " + nombre + " y tu edad es " + edad;
+      }
+
+      function suma() {
+        let num1 = prompt("Digite el primer número de la suma ");
+        let num2 = prompt("Digite el segundo número de la suma ");
+        let suma = parseInt(num1) + parseInt(num2);
+
+        let sum = document.createElement("h1");
+        document.body.append(sum);
+        sum.innerHTML = `2) El valor de la suma es: ${suma}`;
+      }
+      function suma3() {
+        let num1 = prompt("Digite el primer número");
+        let num2 = prompt("Digite el segundo número");
+        let num3 = prompt("Digite el tercer número");
+        let suma = parseInt(num1) + parseInt(num2) + parseInt(num2);
+
+        let sumar3 = document.createElement("h1");
+        document.body.append(sumar3);
+        sumar3.innerHTML = `3) El valor de la suma de tres valores es: ${suma}`;
+      }
+      function ejercicio4() {
+        let num1 = prompt("Digite el primer número");
+        let num2 = prompt("Digite el segundo número");
+
+        let suma = parseInt(num1) + parseInt(num2);
+        let multi = suma * 2;
+        let resMulti = document.createElement("h1");
+        document.body.append(resMulti);
+        resMulti.innerHTML = `4) El valor de la operacion es: ${multi}`;
+      }
+      function ejercicio5() {
+        let num1 = prompt("Digite el primer número");
+        let num2 = prompt("Digite el segundo número");
+
+        let suma = parseInt(num1) + parseInt(num2);
+        let divi = suma / 4;
+        let respDivi = document.createElement("h1");
+        document.body.append(respDivi);
+        respDivi.innerHTML = `5) El valor de la operacion es ${divi}`;
+      }
+      function ejercicio6() {
+        let num1 = prompt("Digite el primer número");
+        let num2 = prompt("Digite el segundo número");
+        let num3 = prompt("Digite el tercer número");
+        let num4 = prompt("Digite el cuarto número");
+        let num5 = prompt("Digite el quinto número");
+
+        let suma =
+          parseInt(num1) +
+          (parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5));
+        let multi = suma * 2;
+        let divi = multi / 5;
+        let respOper = document.createElement("h1");
+        document.body.append(respOper);
+        respOper.innerHTML = `6) El valor de la operacion es: ${divi}`;
+      }
+      function helados() {
+        let num1 = prompt("En la nevera de Andrés, ¿Cuántos helados?");
+        let num2 = prompt("¿Andrés se ha comido cuántos helados? ");
+        let resta = parseInt(num1) - parseInt(num2);
+
+        let rest = document.createElement("h1");
+        document.body.append(rest);
+        rest.innerHTML = `7) En la nevera de Andrés hay ${num1} helados. Esta semana se ha comido   
+        ${num2}, le quedan ${resta} helados`;
+      }
+
+      function areaTriangulo() {
+        let base = prompt("¿Cuál es la base del triángulo?");
+        let altura = prompt("¿Cuál es la altura del triángulo?");
+        let area = (base * altura) / 2;
+        let resp = document.createElement("h1");
+        document.body.append(resp);
+        resp.innerHTML = `8) El área del triángulo es : ${area}`;
+      }
+
+      function areaRectangulo() {
+        let base = prompt("¿Cuál es la base del Rectángulo?");
+        let altura = prompt("¿Cuál es la altura del Rectángulo?");
+        let area = base * altura;
+        let resp = document.createElement("h1");
+        document.body.append(resp);
+        resp.innerHTML = `9) El área del Rectángulo es: ${area}`;
+      }
+      function areaCuadrado() {
+        let base = prompt("¿Cuál es el lado del cuadrado?");
+
+        let area = base * base;
+        let resp = document.createElement("h1");
+        document.body.append(resp);
+        resp.innerHTML = `10) El área del Cuadrado es: ${base}`;
+      }
+      function areaCirculo() {
+        let base = prompt("¿Cuál es el Radio del círculo?");
+
+        let area = base * base * Math.PI;
+        let resp = document.createElement("h1");
+        document.body.append(resp);
+        resp.innerHTML = `11) El área del círculo es: ${area}`;
+      }
+
+      alert("ejercicio 1");
+      Saludar();
+      alert("ejercicio 2");
+      suma();
+      alert("ejercicio 3");
+      suma3();
+      alert("ejercicio 4");
+      ejercicio4();
+      alert("ejercicio 5");
+      ejercicio5();
+      alert("ejercicio 6");
+      ejercicio6();
+      alert("ejercicio 7");
+      helados();
+      alert("ejercicio 8");
+      areaTriangulo();
+      alert("ejercicio 9");
+      areaRectangulo();
+      alert("ejercicio 10");
+      areaCuadrado();
+      alert("ejercicio 11");
+      areaCirculo();
+    </script>
+  </body>
+</html>
